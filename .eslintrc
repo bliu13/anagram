@@ -1,0 +1,58 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "env": {
+    "es2022": true,
+    "node": true
+  },
+  "extends": ["airbnb-base"],
+  "rules": {
+    "import/no-import-module-exports": "off",
+    "import/no-extraneous-dependencies": [
+      "error", {
+        "devDependencies": ["**/*.test.js", "**/*.spec.js"]
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages"
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "comments": 120
+      }
+    ],
+    "indent": [2],
+    "no-console": 0,
+    "no-await-in-loop": 0,
+    "no-loop-func": "off",
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": true,
+        "variables": true
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/__fixtures__/**/*.js",
+        "**/__snapshots__/**/*.js",
+        "**/__mocks__/**/*.js",
+        "**/__tests__/**/*.js"
+      ],
+      "globals": {
+        "afterAll": true,
+        "afterEach": true,
+        "beforeAll": true,
+        "beforeEach": true,
+        "expect": true
+      }
+    }
+  ]
+}

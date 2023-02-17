@@ -1,0 +1,27 @@
+{
+  "name": "anagrams",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": "./index.js",
+  "type": "module",
+  "node": ">=18.12",
+  "scripts": {
+    "lint": "eslint --fix --cache ./ || true",
+    "test": "vitest --watch",
+    "testCoverage": "vitest run --passWithNoTests"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.28.5",
+    "c8": "^7.13.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "vite": "^4.1.1",
+    "vitest": "^0.28.5",
+    "vitest-sonar-reporter": "^0.3.4"
+  }
+}
